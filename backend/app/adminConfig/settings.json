@@ -1,0 +1,585 @@
+{
+    "parkings": {
+        "slug": "parkings",
+        "table": {
+            "name": "parkings",
+            "pk": "id",
+            "verbose": "parkings"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "parkingPlaces",
+                "verbose": "parkingPlaces",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "freePlaces",
+                "verbose": "freePlaces",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "address",
+                "verbose": "address",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "createdAt",
+                "verbose": "createdAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "updatedAt",
+                "verbose": "updatedAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "image",
+                "verbose": "image",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "parkorders": {
+        "slug": "parkorders",
+        "table": {
+            "name": "parkorders",
+            "pk": "id",
+            "verbose": "parkorders"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "status",
+                "verbose": "status",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "parking_id",
+                "verbose": "parking_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "user_id",
+                "verbose": "user_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "createdAt",
+                "verbose": "createdAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "updatedAt",
+                "verbose": "updatedAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "user_id",
+                "verbose": "user_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "users": {
+        "slug": "users",
+        "table": {
+            "name": "users",
+            "pk": "id",
+            "verbose": "users"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "username",
+                "verbose": "username",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "email",
+                "verbose": "email",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password",
+                "verbose": "password",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "createdAt",
+                "verbose": "createdAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "updatedAt",
+                "verbose": "updatedAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "car",
+                "verbose": "car",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "user_roles": {
+        "slug": "user_roles",
+        "table": {
+            "name": "user_roles",
+            "pk": [
+                "roleId",
+                "userId"
+            ],
+            "verbose": "user_roles"
+        },
+        "columns": [
+            {
+                "name": "createdAt",
+                "verbose": "createdAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "updatedAt",
+                "verbose": "updatedAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "roleId",
+                "verbose": "roleId",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "userId",
+                "verbose": "userId",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "roles": {
+        "slug": "roles",
+        "table": {
+            "name": "roles",
+            "pk": "id",
+            "verbose": "roles"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "createdAt",
+                "verbose": "createdAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "updatedAt",
+                "verbose": "updatedAt",
+                "control": {
+                    "datetime": true
+                },
+                "type": "datetime",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    }
+}
