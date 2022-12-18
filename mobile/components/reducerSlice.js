@@ -5,7 +5,7 @@ const slice = createSlice({
     initialState: {
         isLoading: true,
         parkings: [],
-        apiBase: "http://192.168.3.13:8080/api",
+        apiBase: "http://ip_компа:8080/api",
     },
     reducers: {
         loadParkings(state, action) {
