@@ -5,7 +5,7 @@
   git checkout 8laba  
   npm i  
   
-3. ВАЖНО!!! поменять в файле components/reducerSlice  
+3. ВАЖНО!!! поменять в файле mobile/components/reducerSlice  
   ip_компа >> на свой ip   
   если будет раздача вай фай с телефона, то заранее раздать  
   и взять тот айпи, чтобы не менять в аудитории  
