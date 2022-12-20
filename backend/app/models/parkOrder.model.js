@@ -3,6 +3,9 @@ module.exports = (sequelize, Sequelize, Parkings, Users) => {
     status: {
       type: Sequelize.INTEGER,
     },
+    card: {
+      type: Sequelize.INTEGER,
+    },
     parking_id: {
       type: Sequelize.INTEGER,
       references: {
