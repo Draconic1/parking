@@ -54,6 +54,7 @@ const Component = () => {
             status: +status,
             user_id: user.id,
             parking_id: +s,
+            card: 0,
           },
           { headers: authHeader() },
         )
