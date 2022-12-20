@@ -221,6 +221,7 @@ const Component = () => {
               <th>Статус</th>
               <th>ID Места</th>
               <th>ID Пользователя</th>
+              <th>Карта</th>
               <th>Дата</th>
               <th>Изменить</th>
             </tr>
@@ -237,6 +238,8 @@ const Component = () => {
                     </td>
                     <td>{x.parking_id}</td>
                     <td>{x.user_id}</td>
+                    {x.card >0 && <td> {x.card} </td>}
+                    {x.card == 0 && <td> - </td>}
                     <td>
                       {users &&
                         users.find((y) => +y.id === +x.user_id)?.username}
